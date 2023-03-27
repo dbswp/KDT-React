@@ -2,7 +2,8 @@ import "./App.css";
 import React from "react";
 // import Examples2 from "./components/Examples2";
 // import Examples from "./components/Examples";
-// import State from "./components/State";
+import State from "./components/State";
+import State2 from "./components/State2";
 // import UsesState from "./components/UseState";
 import Condition from "./components/Condition";
 // import MainHeader from "./components/MainHeader";
@@ -21,10 +22,11 @@ function App() {
       {/* <EventHandler /> */}
       {/* <Examples /> */}
 
-      {/* <State /> */}
+      <State />
+      <State2 />
       {/* <UsesState /> */}
       {/* <Examples2 /> */}
-      <Condition />
+      {/* <Condition /> */}
     </div>
   );
 }
