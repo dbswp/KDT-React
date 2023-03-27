@@ -1,8 +1,9 @@
 import "./App.css";
-import Examples2 from "./components/Examples2";
-import Examples from "./components/Examples";
-import State from "./components/State";
-import UsesState from "./components/UseState";
+import React from "react";
+// import Examples2 from "./components/Examples2";
+// import Examples from "./components/Examples";
+// import State from "./components/State";
+// import UsesState from "./components/UseState";
 import Condition from "./components/Condition";
 // import MainHeader from "./components/MainHeader";
 // import BtnToNaver from "./components/BtnToNaver";
