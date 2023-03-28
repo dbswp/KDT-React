@@ -12,11 +12,14 @@ export default function ChangeObj({ arr }) {
       </div>
       <button
         onClick={() => {
-          if (arr.length - 1 > state) {
-            setState(state + 1);
-          } else {
-            setState(0);
-          }
+          // if (arr.length - 1 > state) {
+          //   setState(state + 1);
+          // } else {
+          //   setState(0);
+          // }
+          arr.length > state
+            ? setState((state) => 0)
+            : setState((state) => state + 1);
         }}
       >
         Change
