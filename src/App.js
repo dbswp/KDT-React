@@ -1,5 +1,7 @@
-import "./App.css";
-import React from "react";
+import './App.css';
+// import ColorInput from './components/ColorInput';
+// import RefDOM from './components/RefDOM';
+// import React from 'react';
 // import Examples2 from "./components/Examples2";
 // import Examples from "./components/Examples";
 // import State from "./components/State";
@@ -17,27 +19,30 @@ import React from "react";
 // import MultiProps from "./components/MultiProps";
 // import ClassProps from "./components/ClassProps";
 // import CustomList from "./components/CustomList";
-import ChangeObj from "./components/ChangeObj";
+// import ChangeObj from "./components/ChangeObj";
+// import TestRef from './components/TestRef';
+// import ChangeFocus from './components/ChangeFocus';
+import Carculator from './components/Carculator';
 
 function App() {
   // const nameArr = ["뽀로로", "루피", "크롱이"];
-  const nameObj = [
-    {
-      name: "뽀로로",
-      age: "5",
-      nickName: "사고뭉치",
-    },
-    {
-      name: "루피",
-      age: "5",
-      nickName: "사고뭉치",
-    },
-    {
-      name: "크롱",
-      age: "5",
-      nickName: "사고뭉치",
-    },
-  ];
+  // const nameObj = [
+  //   {
+  //     name: "뽀로로",
+  //     age: "5",
+  //     nickName: "사고뭉치",
+  //   },
+  //   {
+  //     name: "루피",
+  //     age: "5",
+  //     nickName: "사고뭉치",
+  //   },
+  //   {
+  //     name: "크롱",
+  //     age: "5",
+  //     nickName: "사고뭉치",
+  //   },
+  // ];
   return (
     <div className="App">
       {/* <MainHeader /> */}
@@ -60,7 +65,12 @@ function App() {
       {/* <Examples2 /> */}
       {/* <Condition /> */}
       {/* <ClassProps name="뽀로로" age="5" nickName="Pororo" /> */}
-      <ChangeObj arr={nameObj} />
+      {/* <ChangeObj arr={nameObj} /> */}
+      {/* <TestRef></TestRef> */}
+      {/* <ChangeFocus></ChangeFocus> */}
+      {/* <RefDOM />
+      <ColorInput /> */}
+      <Carculator />
     </div>
   );
 }
