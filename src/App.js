@@ -1,4 +1,6 @@
 import './App.css';
+import Comparing from './components/Comparing';
+import ReactFragment from './components/ReactFragment';
 // import ColorInput from './components/ColorInput';
 // import RefDOM from './components/RefDOM';
 // import React from 'react';
@@ -22,7 +24,7 @@ import './App.css';
 // import ChangeObj from "./components/ChangeObj";
 // import TestRef from './components/TestRef';
 // import ChangeFocus from './components/ChangeFocus';
-import Carculator from './components/Carculator';
+// import Carculator from './components/Carculator';
 
 function App() {
   // const nameArr = ["뽀로로", "루피", "크롱이"];
@@ -70,7 +72,11 @@ function App() {
       {/* <ChangeFocus></ChangeFocus> */}
       {/* <RefDOM />
       <ColorInput /> */}
-      <Carculator />
+      {/* <Carculator /> */}
+      {/* <Comparing /> */}
+      {/* <ReactFragment /> */}
+      <h1>안녕하세요</h1>
+      <span>반갑습니다.</span>
     </div>
   );
 }
