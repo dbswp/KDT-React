@@ -1,82 +1,16 @@
+import React, { useState } from 'react';
 import './App.css';
-import Comparing from './components/Comparing';
-import ReactFragment from './components/ReactFragment';
-// import ColorInput from './components/ColorInput';
-// import RefDOM from './components/RefDOM';
-// import React from 'react';
-// import Examples2 from "./components/Examples2";
-// import Examples from "./components/Examples";
-// import State from "./components/State";
-// import State2 from "./components/State2";
-// import UsesState from "./components/UseState";
-// import Condition from "./components/Condition";
-// import MainHeader from "./components/MainHeader";
-// import BtnToNaver from "./components/BtnToNaver";
-// import ImgComponent from "./components/ImgComponent";
-// import Inline from "./components/Inline";
-// import EventHandler from "./components/EventHandler";
-// import StateProblem from "./components/StateProblem";
-// import List from "./components/List";
-// import Props from "./components/Props";
-// import MultiProps from "./components/MultiProps";
-// import ClassProps from "./components/ClassProps";
-// import CustomList from "./components/CustomList";
-// import ChangeObj from "./components/ChangeObj";
-// import TestRef from './components/TestRef';
-// import ChangeFocus from './components/ChangeFocus';
-// import Carculator from './components/Carculator';
+import PracticeTimer from './components/PracticeTimer';
 
 function App() {
-  // const nameArr = ["뽀로로", "루피", "크롱이"];
-  // const nameObj = [
-  //   {
-  //     name: "뽀로로",
-  //     age: "5",
-  //     nickName: "사고뭉치",
-  //   },
-  //   {
-  //     name: "루피",
-  //     age: "5",
-  //     nickName: "사고뭉치",
-  //   },
-  //   {
-  //     name: "크롱",
-  //     age: "5",
-  //     nickName: "사고뭉치",
-  //   },
-  // ];
+  const [show, setShow] = useState(false);
+
   return (
     <div className="App">
-      {/* <MainHeader /> */}
-      {/* <BtnToNaver /> */}
-      {/* <ImgComponent /> */}
-      {/* <Inline /> */}
-      {/* <EventHandler /> */}
-      {/* <Examples /> */}
-      {/* <State /> */}
-      {/* <State2 /> */}
-      {/* <StateProblem /> */}
-      {/* <Props text="Hello " /> */}
-      {/* <Props text="My " /> */}
-      {/* <Props text="Name " /> */}
-      {/* <MultiProps text="Go naver" href="https://www.naver.com" userID="tetz" /> */}
-      {/* <List /> */}
-      {/* <CustomList arr={nameArr} /> */}
-      {/* <CustomList obj={nameObj} /> */}
-      {/* <UsesState /> */}
-      {/* <Examples2 /> */}
-      {/* <Condition /> */}
-      {/* <ClassProps name="뽀로로" age="5" nickName="Pororo" /> */}
-      {/* <ChangeObj arr={nameObj} /> */}
-      {/* <TestRef></TestRef> */}
-      {/* <ChangeFocus></ChangeFocus> */}
-      {/* <RefDOM />
-      <ColorInput /> */}
-      {/* <Carculator /> */}
-      {/* <Comparing /> */}
-      {/* <ReactFragment /> */}
-      <h1>안녕하세요</h1>
-      <span>반갑습니다.</span>
+      {show && <PracticeTimer />}
+      <button onClick={() => setShow((cur) => !cur)}>
+        {show ? '숨기기' : '보이기'}
+      </button>
     </div>
   );
 }
