@@ -15,12 +15,15 @@ export default function TestUseEffect() {
     setText(inputValue.current.value);
   };
 
+  // 두번째 인자의 값에 따라 지정된 값 리랜더링
   useEffect(() => {
     console.log('버튼 클릭 할때마다 실행되는 useEffect');
   }, [count]);
   useEffect(() => {
     console.log('인풋입력 할때마다 실행되는 useEffect');
   }, [text]);
+
+  // 두번째 인자를 전달하지 않으면 최초 마운트 시에만 실행된다.
   useEffect(() => {
     console.log('최초 할때마다 실행되는 useEffect');
   }, []);
