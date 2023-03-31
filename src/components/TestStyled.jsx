@@ -10,7 +10,7 @@ const MyHeading = styled.h1`
 `;
 
 const MySpan = styled.span`
-  background-color: pink;
+  background-color: #f5768b;
   font-weight: 700;
 `;
 
