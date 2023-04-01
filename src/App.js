@@ -5,6 +5,14 @@ import styled, { keyframes } from 'styled-components';
 const AppDiv = styled.div`
   text-align: center;
 `;
+const LogoSwitch = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+  `;
 const AppHeader = styled.header`
   background-color: #282c34;
   min-height: 100vh;
@@ -16,14 +24,6 @@ const AppHeader = styled.header`
   color: white;
 `;
 
-const LogoSwitch = keyframes`
-from {
-  transform: rotate(0deg);
-}
-to {
-  transform: rotate(360deg);
-}
-`;
 const AppLogo = styled.img`
   height: 40vmin;
   pointer-events: none;
