@@ -1,0 +1,10 @@
+div.component-root {
+  background-color: tomato;
+  & > h1 {
+    color: dodgerblue;
+  }
+  & > span {
+    background-color: pink;
+    font-weight: 700;
+  }
+}
